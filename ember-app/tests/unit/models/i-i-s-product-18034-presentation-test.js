@@ -1,23 +1,14 @@
-import { moduleForModel, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupTest } from 'ember-qunit';
+import { run } from '@ember/runloop';
 
-moduleForModel('i-i-s-product-18034-presentation', 'Unit | Model | i-i-s-product-18034-presentation', {
-  // Specify the other units that are required for this test.
-  needs: [
-    'model:i-i-s-product-18034-book',
-    'model:i-i-s-product-18034-presentation',
-    'validator:ds-error',
-    'validator:presence',
-    'validator:number',
-    'validator:date',
-    'validator:belongs-to',
-    'validator:has-many',
-    'service:syncer',
-  ],
-});
+module('Unit | Model | i-i-s-product-18034-presentation', function (hooks) {
+  setupTest(hooks);
 
-test('it exists', function(assert) {
-  let model = this.subject();
-
-  // let store = this.store();
-  assert.ok(!!model);
+  // Replace this with your real tests.
+  test('it exists', function(assert) {
+    let store = this.owner.lookup('service:store');
+    let model = run(() => store.createRecord('i-i-s-product-18034-presentation', {}));
+    assert.ok(model);
+  });
 });

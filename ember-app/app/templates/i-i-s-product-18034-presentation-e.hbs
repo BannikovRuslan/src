@@ -1,23 +1,29 @@
-<h3 class="ui header">{{t "forms.i-i-s-product-18034-presentation-e.caption"}}</h3>
+<h3 class="ui header">{{t "forms.i-i-s-product-18034-presentation-e.caption"}}{{#if readonly}} ({{t "forms.edit-form.readonly"}}){{/if}}</h3>
 
 <form class="ui form flexberry-vertical-form" role="form">
   {{flexberry-error error=error}}
   <div class="field">
-    <div class="flexberry-edit-panel">
-      {{#unless readonly}}
-        <button class="ui button save-button" {{action "save"}}>
-          {{t "forms.edit-form.save-button-text"}}
-        </button>
-        {{#unless model.isNew}}
-          <button class="ui button save-del-button" {{action "delete"}}>
-            {{t "forms.edit-form.delete-button-text"}}
-          </button>
-        {{/unless}}
-      {{/unless}}
-      <button class="ui button close-button" {{action "close"}}>
-        {{t "forms.edit-form.close-button-text"}}
-      </button>
-    </div>
+    {{flexberry-edit-panel
+      showCloseButton=true
+      deepMount=true
+      readonly=readonly
+      buttons=(array
+        (hash
+          type="submit"
+          class="save-button"
+          disabled=(readonly)
+          text=(t "forms.edit-form.save-button-text")
+          icon="icon icon-save"
+          action="save")
+        (hash
+          type="submit"
+          class="save-close-button"
+          disabled=(readonly)
+          text=(t "forms.edit-form.saveAndClose-button-text")
+          icon="icon icon-save-close"
+          action="saveAndClose"
+        ))
+    }}
   </div>
   <div class="field flexberry-validationsummary-container">
     <div class="sixteen wide">
@@ -26,25 +32,21 @@
   </div>
   <div class="field">
     <label>{{t "forms.i-i-s-product-18034-presentation-e.date-caption"}}</label>
-    {{
-      flexberry-simpledatetime
+    {{flexberry-simpledatetime
       type="date"
-      placeholder=(t 'components.flexberry-datepicker.placeholder')
       readonly=readonly
       value=model.date
-      class=(if (v-get validationObject "date" "isInvalid") "error")
+      class=(if (v-get validationModel "date" "isInvalid") "error")
       data-test-i-i-s-product-18034-presentation-e-date=true
     }}
-    {{flexberry-validationmessage error=(v-get validationObject "date" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "date" "message")}}
   </div>
-
   <div class="field">
     <label>{{t "forms.i-i-s-product-18034-presentation-e.book-caption"}}</label>
     {{flexberry-lookup
       choose="showLookupDialog"
       remove="removeLookupValue"
       value=model.book
-      class=(if (v-get validationObject "book" "isInvalid") "error")
       displayAttributeName="title"
       autocomplete=true
       relationName="book"
@@ -52,10 +54,11 @@
       title=(t "forms.i-i-s-product-18034-presentation-e.book-caption")
       readonly=readonly
       componentName="bookLookup"
-      class=(if (v-get validationObject "book" "isInvalid") "error")
+      updateLookupValue=(action "updateLookupValue")
+      class=(if (v-get validationModel "book" "isInvalid") "error")
       data-test-i-i-s-product-18034-presentation-e-book=true
     }}
-    {{flexberry-validationmessage error=(v-get validationObject "book" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "book" "message")}}
   </div>
 
 </form>

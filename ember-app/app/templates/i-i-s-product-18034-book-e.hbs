@@ -1,23 +1,29 @@
-<h3 class="ui header">{{t "forms.i-i-s-product-18034-book-e.caption"}}</h3>
+<h3 class="ui header">{{t "forms.i-i-s-product-18034-book-e.caption"}}{{#if readonly}} ({{t "forms.edit-form.readonly"}}){{/if}}</h3>
 
 <form class="ui form flexberry-vertical-form" role="form">
   {{flexberry-error error=error}}
   <div class="field">
-    <div class="flexberry-edit-panel">
-      {{#unless readonly}}
-        <button class="ui button save-button" {{action "save"}}>
-          {{t "forms.edit-form.save-button-text"}}
-        </button>
-        {{#unless model.isNew}}
-          <button class="ui button save-del-button" {{action "delete"}}>
-            {{t "forms.edit-form.delete-button-text"}}
-          </button>
-        {{/unless}}
-      {{/unless}}
-      <button class="ui button close-button" {{action "close"}}>
-        {{t "forms.edit-form.close-button-text"}}
-      </button>
-    </div>
+    {{flexberry-edit-panel
+      showCloseButton=true
+      deepMount=true
+      readonly=readonly
+      buttons=(array
+        (hash
+          type="submit"
+          class="save-button"
+          disabled=(readonly)
+          text=(t "forms.edit-form.save-button-text")
+          icon="icon icon-save"
+          action="save")
+        (hash
+          type="submit"
+          class="save-close-button"
+          disabled=(readonly)
+          text=(t "forms.edit-form.saveAndClose-button-text")
+          icon="icon icon-save-close"
+          action="saveAndClose"
+        ))
+    }}
   </div>
   <div class="field flexberry-validationsummary-container">
     <div class="sixteen wide">
@@ -28,30 +34,30 @@
     {{flexberry-field
       readonly=readonly
       value=model.title
-      class=(if (v-get validationObject "title" "isInvalid") "error")
+      class=(if (v-get validationModel "title" "isInvalid") "error")
       label=(t "forms.i-i-s-product-18034-book-e.title-caption")
       data-test-i-i-s-product-18034-book-e-title=true
     }}
-    {{flexberry-validationmessage error=(v-get validationObject "title" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "title" "message")}}
   </div>
   <div class="field">
     {{flexberry-field
       readonly=readonly
       value=model.author
-      class=(if (v-get validationObject "author" "isInvalid") "error")
+      class=(if (v-get validationModel "author" "isInvalid") "error")
       label=(t "forms.i-i-s-product-18034-book-e.author-caption")
       data-test-i-i-s-product-18034-book-e-author=true
     }}
-    {{flexberry-validationmessage error=(v-get validationObject "author" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "author" "message")}}
   </div>
   <div class="field">
     {{flexberry-field
       readonly=readonly
       value=model.pages
-      class=(if (v-get validationObject "pages" "isInvalid") "error")
+      class=(if (v-get validationModel "pages" "isInvalid") "error")
       label=(t "forms.i-i-s-product-18034-book-e.pages-caption")
       data-test-i-i-s-product-18034-book-e-pages=true
     }}
-    {{flexberry-validationmessage error=(v-get validationObject "pages" "message")}}
+    {{flexberry-validationmessage error=(v-get validationModel "pages" "message")}}
   </div>
 </form>

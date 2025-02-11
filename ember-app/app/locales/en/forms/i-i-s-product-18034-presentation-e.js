@@ -1,5 +1,5 @@
 export default {
-  caption: 'IISProduct_18034PresentationE',
-  'date-caption': 'date',
-  'book-caption': 'book'
+  caption: 'Presentation',
+  'date-caption': 'Date',
+  'book-caption': 'Book',
 };

@@ -1,3 +1,3 @@
 export default {
-  caption: 'IISProduct_18034PresentationL'
+  caption: 'Presentation',
 };

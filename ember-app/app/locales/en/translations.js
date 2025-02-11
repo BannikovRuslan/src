@@ -14,85 +14,85 @@ $.extend(true, translations, EmberFlexberryTranslations);
 $.extend(true, translations, {
   models: {
     'i-i-s-product-18034-book': IISProduct_18034BookModel,
-    'i-i-s-product-18034-presentation': IISProduct_18034PresentationModel
+    'i-i-s-product-18034-presentation': IISProduct_18034PresentationModel,
   },
 
-  'application-name': 'Application caption',
+  'application-name': 'Книжный клуб заголовок',
 
   forms: {
     loading: {
-      'spinner-caption': 'Loading stuff, please have a cold beer...'
+      'spinner-caption': 'Loading stuff, please wait for a moment...',
     },
     index: {
-      greeting: 'Welcome to ember-flexberry test stand!'
+      greeting: 'Welcome to ember-flexberry test stand!',
     },
 
     application: {
       header: {
         menu: {
           'sitemap-button': {
-            title: 'Menu'
+            title: 'Menu',
           },
           'user-settings-service-checkbox': {
-            caption: 'Use service to save user settings'
+            caption: 'Use service to save user settings',
           },
           'show-menu': {
-            caption: 'Show menu'
+            caption: 'Show menu',
           },
           'hide-menu': {
-            caption: 'Hide menu'
+            caption: 'Hide menu',
           },
           'language-dropdown': {
             caption: 'Application language',
-            placeholder: 'Choose language'
-          }
+            placeholder: 'Choose language',
+          },
         },
         login: {
-          caption: 'Login'
+          caption: 'Login',
         },
         logout: {
-          caption: 'Logout'
-        }
+          caption: 'Logout',
+        },
       },
 
       footer: {
-        'application-name': 'Application caption',
+        'application-name': 'Книжный клуб заголовок',
         'application-version': {
           caption: 'Addon version {{version}}',
           title: 'It is version of ember-flexberry addon, which uses in this dummy application ' +
           '(npm version + commit sha). ' +
-          'Click to open commit on GitHub.'
-        }
+          'Click to open commit on GitHub.',
+        },
       },
 
       sitemap: {
         'application-name': {
-          caption: 'Application caption',
-          title: 'Application title'
+          caption: 'Книжный клуб заголовок',
+          title: 'Книжный клуб заголовок',
         },
         'application-version': {
           caption: 'Addon version {{version}}',
           title: 'It is version of ember-flexberry addon, which uses in this dummy application ' +
           '(npm version + commit sha). ' +
-          'Click to open commit on GitHub.'
+          'Click to open commit on GitHub.',
         },
         index: {
           caption: 'Home',
-          title: ''
+          title: '',
         },
         'книжный-клуб': {
-          caption: 'книжный-клуб',
-          title: 'книжный-клуб',
+          caption: 'Книжный клуб',
+          title: 'Книжный клуб',
           'i-i-s-product-18034-book-l': {
-            caption: 'i-i-s-product-18034-book-l',
-            title: 'i-i-s-product-18034-book-l'
+            caption: 'Book',
+            title: '',
           },
           'i-i-s-product-18034-presentation-l': {
-            caption: 'i-i-s-product-18034-presentation-l',
-            title: 'i-i-s-product-18034-presentation-l'
-          }
-        }
-      }
+            caption: 'Presentation',
+            title: '',
+          },
+        },
+      },
     },
 
     'edit-form': {
@@ -101,12 +101,12 @@ $.extend(true, translations, {
       'save-error-message-caption': 'Save operation failed',
       'delete-success-message-caption': 'Delete operation succeed',
       'delete-success-message': 'Object deleted',
-      'delete-error-message-caption': 'Delete operation failed'
+      'delete-error-message-caption': 'Delete operation failed',
     },
     'i-i-s-product-18034-book-l': IISProduct_18034BookLForm,
     'i-i-s-product-18034-presentation-l': IISProduct_18034PresentationLForm,
     'i-i-s-product-18034-book-e': IISProduct_18034BookEForm,
-    'i-i-s-product-18034-presentation-e': IISProduct_18034PresentationEForm
+    'i-i-s-product-18034-presentation-e': IISProduct_18034PresentationEForm,
   },
 
 });

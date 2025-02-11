@@ -1,20 +1,12 @@
-import { moduleFor, test } from 'ember-qunit';
+import { module, test } from 'qunit';
+import { setupTest } from 'ember-qunit';
 
-moduleFor('controller:i-i-s-product-18034-book-l', 'Unit | Controller | i-i-s-product-18034-book-l', {
-  // Specify the other units that are required for this test.
-  needs: [
-    'controller:advlimit-dialog',
-    'controller:colsconfig-dialog',
-    'controller:filters-dialog',
-    'service:objectlistview-events',
-    'service:user-settings',
-    'service:app-state',
-    'service:adv-limit',
-  ],
-});
+module('Unit | Controller | i-i-s-product-18034-book-l', function (hooks) {
+  setupTest(hooks);
 
-// Replace this with your real tests.
-test('it exists', function(assert) {
-  let controller = this.subject();
-  assert.ok(controller);
+  // Replace this with your real tests.
+  test('it exists', function(assert) {
+    let controller = this.owner.lookup('controller:i-i-s-product-18034-book-l');
+    assert.ok(controller);
+  });
 });

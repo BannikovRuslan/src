@@ -42,20 +42,6 @@ export default ListFormRoute.extend({
     @type Object
   */
   developerUserSettings: computed(function() {
-    return { IISProduct_18034BookL: {
-      "DEFAULT": {
-        "sorting": [],
-        "columnWidths": [
-          {
-            "propName": "OlvRowToolbar",
-            "width": 200
-          },
-          {
-            "propName": "title",
-            "width": "30%"
-          },
-        ]
-      }
-    }}
+    return { IISProduct_18034BookL: {} }
   }),
 });

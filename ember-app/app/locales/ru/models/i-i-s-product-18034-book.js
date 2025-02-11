@@ -2,33 +2,33 @@ export default {
   projections: {
     BookE: {
       title: {
-        __caption__: ''
+        __caption__: '',
       },
       author: {
-        __caption__: ''
+        __caption__: '',
       },
       pages: {
-        __caption__: ''
-      }
+        __caption__: '',
+      },
     },
     BookL: {
       title: {
-        __caption__: 'Название'
+        __caption__: 'Название',
       },
       author: {
-        __caption__: 'Автор'
-      }
-    }
+        __caption__: 'Автор',
+      },
+    },
   },
   validations: {
     author: {
-      __caption__: 'author'
+      __caption__: 'author',
     },
     pages: {
-      __caption__: 'pages'
+      __caption__: 'pages',
     },
     title: {
-      __caption__: 'title'
-    }
-  }
+      __caption__: 'title',
+    },
+  },
 };
