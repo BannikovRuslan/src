@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Product_18034.Objects</name>
+    </assembly>
+    <members>
+        <member name="T:IIS.Product_18034.Book">
+            <summary>
+            Book.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Book.Author">
+            <summary>
+            Author.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Book.Pages">
+            <summary>
+            Pages.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Book.Title">
+            <summary>
+            Title.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_18034.Book.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Book.Views.BookE">
+            <summary>
+            "BookE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Book.Views.BookL">
+            <summary>
+            "BookL" view.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_18034.ObjectsMarker">
+            <summary>
+            Class for determinate objects assembly in DI.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_18034.Presentation">
+            <summary>
+            Presentation.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Presentation.Date">
+            <summary>
+            Date.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Presentation.Book">
+            <summary>
+            Presentation.
+            </summary>
+        </member>
+        <member name="T:IIS.Product_18034.Presentation.Views">
+            <summary>
+            Class views container.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Presentation.Views.MyPresentation">
+            <summary>
+            "MyPresentation" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Presentation.Views.PresentationE">
+            <summary>
+            "PresentationE" view.
+            </summary>
+        </member>
+        <member name="P:IIS.Product_18034.Presentation.Views.PresentationL">
+            <summary>
+            "PresentationL" view.
+            </summary>
+        </member>
+    </members>
+</doc>

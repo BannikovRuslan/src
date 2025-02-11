@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-product-18034-book-e",
+  "editForm": "i-i-s-product-18034-book-e",
+  "external": false,
+  "caption": "Book",
+  "name": "IISProduct_18034BookL",
+  "className": "BookL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-18034-book",
+      "modelProjection": "BookL"
+    }
+  ]
+}

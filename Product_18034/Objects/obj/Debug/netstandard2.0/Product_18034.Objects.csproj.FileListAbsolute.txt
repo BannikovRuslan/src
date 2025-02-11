@@ -1,0 +1,11 @@
+C:\temp\test\src\Product_18034\Objects\bin\Debug\netstandard2.0\Product_18034.Objects.xml
+C:\temp\test\src\Product_18034\Objects\bin\Debug\netstandard2.0\Product_18034.Objects.deps.json
+C:\temp\test\src\Product_18034\Objects\bin\Debug\netstandard2.0\Product_18034.Objects.dll
+C:\temp\test\src\Product_18034\Objects\bin\Debug\netstandard2.0\Product_18034.Objects.pdb
+C:\temp\test\src\Product_18034\Objects\obj\Debug\netstandard2.0\Product_18034.Objects.csproj.AssemblyReference.cache
+C:\temp\test\src\Product_18034\Objects\obj\Debug\netstandard2.0\Product_18034.Objects.GeneratedMSBuildEditorConfig.editorconfig
+C:\temp\test\src\Product_18034\Objects\obj\Debug\netstandard2.0\Product_18034.Objects.AssemblyInfoInputs.cache
+C:\temp\test\src\Product_18034\Objects\obj\Debug\netstandard2.0\Product_18034.Objects.AssemblyInfo.cs
+C:\temp\test\src\Product_18034\Objects\obj\Debug\netstandard2.0\Product_18034.Objects.csproj.CoreCompileInputs.cache
+C:\temp\test\src\Product_18034\Objects\obj\Debug\netstandard2.0\Product_18034.Objects.dll
+C:\temp\test\src\Product_18034\Objects\obj\Debug\netstandard2.0\Product_18034.Objects.pdb

@@ -1,0 +1,29 @@
+﻿{
+  "applicationCaption": "Книжный клуб заголовок",
+  "applicationTitle": "Книжный клуб описание",
+  "items": [
+    {
+      "link": null,
+      "menuName": "книжный-клуб",
+      "caption": "Книжный клуб",
+      "title": "Книжный клуб",
+      "children": [
+        {
+          "link": "i-i-s-product-18034-book-l",
+          "menuName": null,
+          "caption": "Book",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-product-18034-presentation-l",
+          "menuName": null,
+          "caption": "Presentation",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

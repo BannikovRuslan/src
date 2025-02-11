@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Product_18034.ODataBackend.props" />
+</Project>

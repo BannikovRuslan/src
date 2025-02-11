@@ -1,0 +1,1 @@
+docker-compose -p product_18034 up -d

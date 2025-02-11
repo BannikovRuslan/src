@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Book",
+      "projection": "BookL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Presentation",
+  "name": "IISProduct_18034PresentationE",
+  "className": "PresentationE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-18034-presentation",
+      "modelProjection": "PresentationE"
+    }
+  ]
+}

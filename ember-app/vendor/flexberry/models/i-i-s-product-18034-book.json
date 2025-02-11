@@ -1,0 +1,90 @@
+﻿{
+  "name": "IISProduct_18034Book",
+  "modelName": "i-i-s-product-18034-book",
+  "className": "Book",
+  "nameSpace": "IIS.Product_18034",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "author",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "pages",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "BookE",
+      "modelName": "i-i-s-product-18034-book",
+      "attrs": [
+        {
+          "name": "title",
+          "caption": "",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "author",
+          "caption": "",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "pages",
+          "caption": "",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "BookL",
+      "modelName": "i-i-s-product-18034-book",
+      "attrs": [
+        {
+          "name": "title",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "author",
+          "caption": "Автор",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

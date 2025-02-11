@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = IIS.Product_18034
+build_property.ProjectDir = C:\temp\test\src\Product_18034\IntegrationTests\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

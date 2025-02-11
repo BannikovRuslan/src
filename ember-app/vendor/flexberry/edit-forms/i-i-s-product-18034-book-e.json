@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Book",
+  "name": "IISProduct_18034BookE",
+  "className": "BookE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-product-18034-book",
+      "modelProjection": "BookE"
+    }
+  ]
+}
